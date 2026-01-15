@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Merek extends Model
 {
     protected $table = 'tb_merek';
-    protected $primaryKey = 'merek_id';
+    protected $primaryKey = 'id_merek';
 
     protected $guarded = [];
     

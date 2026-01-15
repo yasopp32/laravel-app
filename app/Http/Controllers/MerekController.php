@@ -50,7 +50,8 @@ class MerekController extends Controller
      */
     public function edit($id)
     {
-       
+        $row = Merek::findOrFail($id);
+        return view('merek.edit', compact('row'));
     }
 
     /**
@@ -58,14 +59,24 @@ class MerekController extends Controller
      */
     public function update(Request $request, string $id)
     { 
-        
+        $row = Merek::findOrFail($id);
+        $row->update([
+            'nama_merek' => $request->nama_merek,
+        ]);
+
+        return redirect('/merek');
+
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destory(string $id)
+    public function destroy(string $id)
     {
-        
+        $row = Merek::findOrFail($id);  // Mengambil data berdasarkan ID
+        $row->delete();  // Menghapus data
+
+        return redirect('/merek');  // Redirect setelah penghapusan
     }
+
 }

@@ -1,17 +1,21 @@
-@extends('layouts.dashboard')
+@extends('layouts.app')
 
 @section('content')
+    <h2>Edit Daftar Mobil</h2>
 
-    <h2>Edit Merek</h2>
+    <div class="card">
+        <div class="card-body">
 
-    <form action="/merek/{{ $merek->merek_id }}" method="POST">
-        @csrf
-        @method('PUT')
-        <div class="mb-3">
-            <label for="nama_merek" class="form-label fw-bold">Nama Merek</label>
-            <input type="text" class="form-control" name="nama_merek" id="nama_merek" value="{{ $merek->merek_nama }}">
+           <form action="{{ route('merek.update', $row->id_merek) }}" method="POST">
+                @csrf
+                @method('PUT') <!-- Menambahkan method PUT -->
+                <div class="mb-3">
+                    <label for="nama_merek" class="form-label fw-bold">Nama Merek</label>
+                    <input type="text" class="form-control" name="nama_merek" id="nama_merek" value="{{ $row->nama_merek }}" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+                        
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
-    </form>
-
+    </div>
 @endsection
