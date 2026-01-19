@@ -6,9 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Merek extends Model
 {
-    protected $table = 'tb_merek';
-    protected $primaryKey = 'id_merek';
+    protected $table = 'tb_merek';  
+    protected $primaryKey = 'id_merek'; 
+    protected $fillable = ['nama_merek'];
 
-    protected $guarded = [];
-    
+    public function mobil()
+    {
+        return $this->hasMany(Mobil::class, 'id_merek', 'id_merek');
+    }
 }

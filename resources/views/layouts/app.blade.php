@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Akademik') }}
+                    {{ config('app.name', 'PrimaAuto') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,8 +34,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         @auth
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/merek') }}">Merek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/mobil') }}">Detail Mobil</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/servis') }}">Detail Servis</a>
                         </li>
                         @endauth
                     </ul>

@@ -1,0 +1,152 @@
+/* ===============================
+   SIDEBAR LAYOUT
+================================ */
+#wrapper {
+    min-height: 100vh;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #0d6efd; /* biru bootstrap */
+}
+
+/* ===============================
+   HEADER SIDEBAR
+================================ */
+#sidebar-wrapper .sidebar-heading {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ===============================
+   MENU SIDEBAR
+================================ */
+#sidebar-wrapper .list-group {
+    width: 100%;
+}
+
+#sidebar-wrapper .list-group-item {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+}
+
+/* Hilangkan efek bootstrap aneh */
+#sidebar-wrapper .list-group-item:focus {
+    box-shadow: none;
+}
+
+/* ===============================
+   PAGE CONTENT
+================================ */
+#page-content-wrapper {
+    width: 100%;
+}
+
+/* Navbar atas */
+.navbar {
+    height: 56px;
+}
+
+/* === SIDEBAR BLACK & WHITE THEME === */
+
+#sidebar-wrapper {
+    background-color: #111 !important;
+    color: #ffffff !important;
+    border-right: 1px solid #222 !important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-bottom: 1px solid #222 !important;
+}
+
+#sidebar-wrapper .list-group-item {
+    background-color: transparent !important;
+    color: #ddd !important;
+    border: none !important;
+    transition: all 0.2s ease-in-out;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+    background-color: #4d4d4d !important;
+    color: #fff !important;
+    transform: translateX(4px);
+}
+
+#sidebar-wrapper .list-group-item.active {
+    background-color: #8d8888 !important;
+    color: #fff !important;
+    border-left: 4px solid #fff !important;
+    font-weight: 700 !important;
+}
+
+.btn-primary {
+    background-color: #867e7e !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background-color: #969090 !important;
+}
+
+
+/* Styling untuk alert success */
+.alert-success {
+     background: linear-gradient(135deg, #e64a19, #333);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk card header */
+.card-header {
+     background: linear-gradient(135deg, #e64a19, #333);
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+}
+
+/* Styling untuk card body */
+.card-body {
+    padding: 30px;
+    background-color: #f8f9fa;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+ footer {
+    background: linear-gradient(135deg, #e64a19, #333);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+    border-radius: 20px;
+    width: 100%;
+}
+
+

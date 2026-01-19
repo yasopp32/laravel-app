@@ -25,4 +25,7 @@
         </div>
     </div>
 </div>
+ <footer>
+        <p>© 2026 BengkelMobil. Semua Hak Cipta Dilindungi.</p>
+    </footer>
 @endsection

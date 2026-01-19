@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
 @section('content')
 
@@ -21,7 +21,7 @@
                     <td>{{ $row->nama_merek }}</td>
                     <td>
                          <a href="{{ url('merek/' . $row->id_merek . '/edit') }}"
-                            class="btn btn-primary btn-sm">Edit</a>
+                            class="btn btn-warning btn-sm">Edit</a>
 
                         <form action="{{ url('merek/' . $row->id_merek) }}" method="POST" class="d-inline">
                             @csrf
@@ -35,4 +35,7 @@
 
         </tbody>
     </table>
+    <footer>
+        <p>© 2026 BengkelMobil. Semua Hak Cipta Dilindungi.</p>
+    </footer>
 @endsection

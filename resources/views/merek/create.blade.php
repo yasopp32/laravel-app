@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
 @section('content')
     <h2>Tambah Daftar Mobil</h2>
@@ -17,4 +17,7 @@
 
         </div>
     </div>
+    <footer>
+        <p>© 2026 BengkelMobil. Semua Hak Cipta Dilindungi.</p>
+    </footer>
 @endsection
